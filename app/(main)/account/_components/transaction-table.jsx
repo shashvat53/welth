@@ -167,9 +167,9 @@ const TransactionTable = ({ transactions }) => {
   };
   const handleSelectAll = () => {
     setSelectedIds((current) =>
-      selectedIds.length === filteredAndSortedTransactions.length
+      selectedIds.length === paginationTransaction.length
         ? []
-        : filteredAndSortedTransactions.map((t) => t?.id)
+        : paginationTransaction.map((t) => t?.id)
     );
   };
 

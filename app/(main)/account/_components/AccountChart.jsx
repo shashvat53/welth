@@ -103,18 +103,6 @@ export function AccountChart({ transactions }) {
         },
       },
     },
-    x: {
-      stacked: false,
-      ticks: {
-        maxRotation: 0,
-        autoSkip: false,
-      },
-      grid: {
-        display: false,
-      },
-    },
-    barPercentage: 1.0, // 👈 makes each bar take 100% width of its category
-    categoryPercentage: 1.0,
   };
 
   return (
