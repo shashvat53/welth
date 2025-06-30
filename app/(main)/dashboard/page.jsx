@@ -11,11 +11,13 @@ const DashboardPage = async () => {
   const accounts = await getUserAccounts();
   // console.log("Accounts: ", accounts);
   const defaultAccount = accounts?.find((account) => account.isDefault);
+  console.log("defaultAccount: ", defaultAccount);
   let budgetData = null;
   if (defaultAccount) {
     budgetData = await getCurrentBudget(defaultAccount.id);
   }
-  // console.log("budgetData: ", budgetData);
+
+  console.log("budgetData: ", budgetData);
   return (
     <div className=" space-y-8">
       {/* budget progress */}
